@@ -1,0 +1,30 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [".bmx", ".gradle"],
+			"file_exclude_patterns": ["*.i", "*.sublime-workspace"]
+		}
+	],
+	"build_systems": [
+		{
+			"name": "Gradle: Build muttley.commandstack Module",
+			"cmd": ["gradle", "--daemon", "build_module"],
+			"working_dir": "${project_path}/commandstack.mod",
+			"shell": "true"
+		},
+		{
+			"name": "Gradle: Run muttley.commandstack Module Example",
+			"cmd": ["gradle", "--daemon", "run_examples"],
+			"working_dir": "${project_path}/commandstack.mod",
+			"shell": "true"
+		},
+		{
+			"name": "Gradle: Run muttley.commandstack Module Tests",
+			"cmd": ["gradle", "--daemon", "run_tests"],
+			"working_dir": "${project_path}/commandstack.mod",
+			"shell": "true"
+		}
+	]
+}
