@@ -1,0 +1,12 @@
+*.a
+*.bak
+*.i
+*.exe
+*.layout
+*.log
+*.o
+*.orig
+*.s
+*.sublime-workspace
+.gradle
+commands.html
