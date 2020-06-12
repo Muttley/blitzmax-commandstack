@@ -7,9 +7,8 @@ add undo/redo functionality to your applications.
 
 This module requires the [muttley.stack][1] module.
 
-Also, the Unit Tests for this module rely on Bruce Henderson's
-**bah.maxunit** module available from his **maxmods/bah.mod**
-[GitHub repository][6].
+Also, the Unit Tests for this module rely on Bruce Henderson's **bah.maxunit**
+module available from his **maxmods/bah.mod** [GitHub repository][6].
 
 # Installation
 
