@@ -1,6 +1,6 @@
 Rem
 '
-' Copyright (c) 2009-2013 Paul Maskelyne <muttley@muttleyville.org>.
+' Copyright (c) 2009-2020 Paul Maskelyne <muttley@muttleyville.org>.
 '
 ' All rights reserved. Use of this code is allowed under the
 ' Artistic License 2.0 terms, as specified in the LICENSE file
@@ -132,14 +132,14 @@ Type TMacroCommand Extends TCommand Final
 		bbdoc: Undoes the command
 		about: Calls the unexecute method of each command in the macro in reverse order
 	EndRem
-	Method Unexecute:Int()
+	Method Unexecute()
 		Local reversedCommands:TList = _commands.Reversed()
 
 		For Local command:TCommand = EachIn reversedCommands
 			command.Unexecute()
 		Next
 
-		Return reversedCommands.Count()
+		'Return reversedCommands.Count()
 	End Method
 
 End Type
