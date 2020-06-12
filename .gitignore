@@ -1,7 +1,9 @@
+**/.bmx
 *.a
 *.bak
-*.i
 *.exe
+*.i
+*.i2
 *.layout
 *.log
 *.o
